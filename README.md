@@ -1,3 +1,4 @@
+
 步骤：
 
 1.安装 git 然后打开 Git Bush
@@ -35,3 +36,15 @@
 15.$ git pull 多人协作解决冲突
 
 16.$ git push 修改后的文件上传
+
+//后续操作
+
+1.在本地 点击鼠标右键 Git Bush
+
+2.$ git pull origin master 
+
+3.$ git add .
+
+4.$ git commit -m "解说"
+
+5.$ git push origin master 上传
