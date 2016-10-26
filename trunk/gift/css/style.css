@@ -1,0 +1,338 @@
+ion-tabs.tabs-color-active-assertive .tab-item{
+	color: #b9aaaa;
+}
+ion-tabs.tabs-color-active-assertive .tab-item.tab-item-active{
+	color: #ff4258;
+}
+
+.bar.bar-assertive {
+    border-color: #ff2d47;
+    background-color: #ff2d47;
+    background-image: linear-gradient(0deg,#ff2d47,#ff2d47 50%,transparent 50%);
+    color: #fff;
+}
+.spinner{
+	fill: #ff2d47;
+	stroke: #ff2d47;
+}
+
+/************************ home start *****************************/
+.bar .title {
+	width: 60%;
+	margin: auto;
+}
+.bar .title .nav-bar-title{
+	width: 100%;
+}
+.bar .title .home-nav-wrapper{
+	width: 100%;
+	height: 30px;
+	margin-top: 7px;
+	background: #fff4f6;
+	border-radius: 17px;
+	position: relative;
+}
+.bar .title .home-nav-wrapper span:nth-child(1){
+	display: block;
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+	position: absolute;
+	top: 0;
+	left: 5px;
+	font-size: 18px;
+	color: #6c6666;
+}
+.bar .title .home-nav-wrapper span:nth-child(2){
+	display: block;
+	height: 30px;
+	line-height: 30px;
+	position: absolute;
+	top: 0;
+	left: 35px;
+	font-size: 14px;
+	color: #827c7c;
+}
+.bar .button.button-clear.home-btn{
+	font-size: 17px;
+	font-weight: 700;
+}
+.bar.home-subheader{
+	top: 44px;
+}
+#home{
+	top: 0;
+	bottom: 0;
+}
+.home-subheader ion-scroll{
+	width: 100%;
+	height: 34px;
+}
+.home-subheader ion-scroll .scroll{
+	height: 34px;
+	width: 300%;
+	display: -webkit-flex;
+}
+.home-subheader ion-scroll .scroll span{
+	flex: 1;
+	line-height: 34px;
+	text-align: center;
+	font-size: 12px;
+	color: #666;
+}
+.home-subheader ion-scroll .scroll span.btn-active{
+	color: #ff2d47;
+	border-bottom: 2px #ff2d47 solid;
+}
+.slider.home-box{
+	position: absolute;
+	top: 88px;
+	bottom: 49px;
+	left: 0;
+	width: 100%;
+}
+.slider ion-slide.home-page{
+	width: 100%;
+	height: 100%;
+}
+.slider ion-slide{
+	width: 100%;
+}
+#home img{
+	display: block;
+	width: 100%;
+}
+#home .slider-pager .slider-pager-page{
+	color: #FFFFFF;
+	font-size: 12px;
+}
+#home .slider-pager{
+	bottom: 10px;
+}
+
+#home .second-banner{
+	width: 100%;
+	height: 115px;
+}
+#home .second-banner .scroll{
+	width: 850px;
+	height: 115px;
+}
+#home .second-banner .scroll img{
+	width: 95px;
+	height: 95px;
+	margin: 10px;
+	margin-right: 0;
+	float: left;
+}
+#home .home-list .list{
+	background: #ddd;
+}
+#home .home-list .item{
+	margin-top: 5px;
+}
+#home .home-list .item .item-title{
+	position: relative;
+	line-height: 30px;
+	height: 30px;
+}
+#home .home-list .item .item-title span:nth-child(1){
+	position: absolute;
+	top: 0;
+	left: 8px;
+	font-size: 12px;
+	display: block;
+	width: 80%;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+#home .home-list .item .item-title span:nth-child(2){
+	position: absolute;
+	top: 0;
+	right: 8px;
+}
+.home-alert .popup{
+	background: yellow;
+	border-radius: 5px;
+}
+/************************ home end *****************************/
+
+
+/************************ top start *****************************/
+.bar.top-subheader{
+	display: -webkit-flex;
+	border: none;
+	background: none;
+}
+.bar.top-subheader span{
+	flex: 1;
+	line-height: 34px;
+	text-align: center;
+	font-size: 12px;
+	color: #666;
+}
+.bar.top-subheader span.btn-active{
+	color: #ff2d47;
+	border-bottom: #ff2d47 solid 2px;
+}
+#top{
+	/*background: red;*/
+	top: 0;
+	bottom: 0;
+}
+.slider.top-box{
+	position: absolute;
+	top: 88px;
+	bottom: 49px;
+	left: 0;
+	width: 100%;
+	/*background: green;*/
+}
+#top .list-main{
+	width: 100%;
+	display: block;
+}
+#top .top-list{
+	background: #faf5f5;
+}
+#top .top-list .top-item.left{
+	padding-left: 10px;
+	padding-right: 5px;
+	padding-top: 10px;
+}
+#top .top-list .top-item.right{
+	padding-left: 5px;
+	padding-right: 10px;
+	padding-top: 10px;
+}
+#top .top-list .top-item .item-content{
+	background: white;
+	width: 100%;
+	height: 100%;
+	border-radius: 4px;
+	border: 1px solid #eee;
+}
+#top .top-list .top-item .img{
+	overflow: hidden;
+}
+#top .top-list .top-item .item-cover{
+	width: 100%;
+	min-height: 100%;
+}
+#top .top-list .top-item p{
+	margin: 0;
+	padding-left: 5px;
+	line-height: 25px;
+	font-size: 14px;
+}
+#top .top-list .top-item p:nth-of-type(1){
+	color: #222222;
+}
+#top .top-list .top-item p:nth-of-type(2){
+	color: #9E9E9E;
+}
+#top .top-list .top-item p:nth-of-type(3){
+	color: #ff2d47;
+}
+/************************ top end *****************************/
+
+/************************ category start *****************************/
+.bar .title .category-nav-wrapper{
+	width: 120px;
+	height: 34px;
+	margin: 5px auto;
+	display: -webkit-flex;
+}
+.bar .title .category-nav-wrapper span{
+	flex: 1;
+	text-align: center;
+	line-height: 34px;
+	font-size: 14px;
+	color: white;
+}
+.bar .title .category-nav-wrapper span.active{
+	border-bottom: 2px solid white;
+}
+.bar-search{
+	position: absolute;
+	top: 44px;
+	height: 34px;
+	left: 0;
+	width: 100%;
+}
+.bar-search p{
+	text-align: center;
+	color: #666;
+	margin: 5px 10px;
+	line-height: 24px;
+	background: #EFEFF4;
+	font-size: 12px;
+}
+#category{
+	top: 78px;
+}
+#category .scroll, #category .scroll .wrapper, #category .scroll .single{
+	width: 100%;
+	height: 100%;
+}
+#category .scroll .single{
+	display: -webkit-flex;
+}
+#category .scroll .single .left-scroll{
+	width: 90px;
+	height: 100%;
+}
+#category .scroll .single .right-scroll{
+	flex: 1;
+	height: 100%;
+}
+#category .scroll .single .left-scroll .nav-title{
+	height: 40px;
+	line-height: 40px;
+	width: 100%;
+	text-align: center;
+	font-size: 14px;
+	color: #555;
+	background: #EFEFF4;
+}
+#category .scroll .single .left-scroll .nav-title.titleActive{
+	border-left: 2px solid #ff2d47;
+	color: #ff2d47;
+	background: white;
+}
+#category .single-list .single-item{
+	width: 33.33%;
+	height: 100px;
+	float: left;
+}
+#category .single-list .single-item img{
+	width: 100%;
+	height: 75px;
+	
+}
+#category .single-list .list-title{
+	height: 50px;
+	margin: 0;
+	text-align: center;
+	line-height: 50px;
+	font-size: 12px;
+	color: #4D4D4D;
+}
+#category .single-list .single-item p{
+	margin: 0;
+	line-height: 25px;
+	font-size: 12px;
+	text-align: center;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	width: 100%;
+	color: #666666;
+}
+/************************ category end *****************************/
+
+#me .psd{
+	font-size: 20px;
+}

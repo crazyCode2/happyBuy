@@ -1,0 +1,66 @@
+<ion-view title="首页" id="homeView">
+	<ion-nav-buttons side="left">
+		<button class="button button-clear home-btn">礼物说</button>
+	</ion-nav-buttons>
+	<ion-nav-title>
+		<div class="home-nav-wrapper">
+			<span class="icon ion-ios-search-strong"></span>
+			<span>中秋佳节送好礼</span>
+		</div>
+	</ion-nav-title>
+	<ion-nav-buttons side="right">
+		<button class="button button-clear icon ion-ios-calendar-outline"></button>
+	</ion-nav-buttons>
+	
+	<div class="bar home-subheader">
+		<ion-scroll direction="x" scrollbar-x="false" >
+			<span class="nav-btn" ng-repeat="item in navData" ng-class="{'btn-active':$index==selectSlide}" ng-click="navAction($index, item.id)">{{item.name}}</span>
+		</ion-scroll>
+	</div>
+	
+	<!-- 导航分页内容 -->
+	<ion-slide-box class="home-box" show-pager="false" delegate-handle="home-box" on-slide-changed="listChangeAction($index)">
+		<ion-slide ng-repeat="slideData in navData" class="home-page">
+			
+			<ion-content id="home" class="has-subheader">
+				<!-- 下拉刷新 -->
+				<ion-refresher spinner="dots" on-refresh="refresh()" ng-if="selectSlide==$index">
+				</ion-refresher>
+				<div>
+					<div id="allBanner">
+						<!-- banners -->
+						<ion-slide-box does-continue="true" auto-play="true" slide-interval="3000" ng-if="$index==0" delegate-handle="banner">
+							<ion-slide class="banner" ng-repeat="item in banners">
+								<img ng-src="{{item.imgUrl}}" />
+							</ion-slide>
+						</ion-slide-box>
+						
+						<!-- second banners -->
+						<ion-scroll class="second-banner" direction="x" scrollbar-x="false"  ng-if="$index==0">
+							<img ng-repeat="item in secBanners" ng-src="{{item.imgUrl}}" />
+						</ion-scroll>
+					</div>
+					<!-- 列表 -->
+					<ion-list class="home-list list-borderless"  ng-if="selectSlide==$index||selectSlide==$index+1||selectSlide==$index-1">
+						<ion-item ng-repeat="item in allListData[$index]" class="item-image">
+							<img ng-src="{{item.imgUrl}}" />
+							<p class="item-title">
+								<span>{{item.title}}</span>
+								<span><i class="icon ion-ios-heart-outline assertive"></i>{{item.likes}}</span>
+							</p>
+						</ion-item>
+					</ion-list>
+				</div>
+				<!-- 上拉加载更多 -->
+				<ion-infinite-scroll spinner="dots" on-infinite="loadMore()" immediate-check="false" distance="1%" ng-if="canLoadMore&&selectSlide==$index">
+				</ion-infinite-scroll>
+			</ion-content>
+		</ion-slide>
+	</ion-slide-box>
+</ion-view>
+
+
+
+
+
+

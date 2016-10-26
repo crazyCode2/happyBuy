@@ -1,0 +1,13 @@
+<ion-view>
+	<ion-nav-buttons>
+		 
+	</ion-nav-buttons>
+	<ion-content id="me">
+		{{name}}
+		
+		<p ng-click="remmberAction()">
+			<span class="psd icon positive" ng-class="{'icon ion-ios-circle-outline':!isRemmber, 'ion-ios-checkmark':isRemmber}"></span>记住密码
+		</p>
+		<button class="button" ng-click="regAction()">注册</button>
+	</ion-content>
+</ion-view>

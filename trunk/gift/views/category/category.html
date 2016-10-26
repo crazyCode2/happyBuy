@@ -1,0 +1,17 @@
+<ion-view>
+	<ion-nav-title>
+		<div class="category-nav-wrapper">
+			<span ng-repeat="item in ['攻略', '单品']" ng-class="{'active':$index==selectIndex}" ng-click="titleAction($index)" >{{item}}</span>
+		</div>
+	</ion-nav-title>
+	<!-- 搜索 -->
+	<div class="bar-search">
+		<p><span class="icon ion-ios-search-strong">中秋佳节送好礼</span></p>
+	</div>
+	<ion-content id="category">
+		
+		<div class="wrapper" ng-include="tmpUrl"></div>
+		
+	</ion-content>
+	
+</ion-view>

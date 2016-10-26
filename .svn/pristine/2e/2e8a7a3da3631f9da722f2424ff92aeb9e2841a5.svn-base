@@ -1,0 +1,35 @@
+<ion-view title="礼物榜">
+	<ion-nav-buttons side="right">
+		<button class="button button-clear icon ion-share"></button>
+	</ion-nav-buttons>
+	<!-- 选项卡 -->
+	<div class="bar bar-subheader top-subheader">
+		<span ng-repeat="title in allTitle" ng-class="{'btn-active': $index==selectIndex}" ng-click="topAction($index)">{{title}}</span>
+	</div>
+	
+	<!-- 内容部分 -->
+	<ion-slide-box class="top-box" show-pager="false" on-slide-changed="topPageChange($index)">
+		<ion-slide ng-repeat="title in allTitle">
+			<ion-content id="top">
+				
+				<img  ng-if="$index==selectIndex||$index==selectIndex-1||$index==selectIndex+1" class="list-main" src="img/main.jpg"/>
+				
+				<div  ng-if="$index==selectIndex||$index==selectIndex-1||$index==selectIndex+1" class="top-list">
+					
+						<div class="top-item" collection-repeat="item in allListData[$index]" item-height="itemHeight" item-width="50%" ng-class="{'left': $index%2==0, 'right':$index%2==1}">
+							<div class="item-content">
+								<!-- item内容部分 -->
+									<div class="img" ng-style="{{imgStyle}}"><img class="item-cover" ng-src="{{item.imgUrl}}"/></div>
+									<p>{{item.name}}</p>
+									<p>{{item.description}}</p>
+									<p>￥{{item.price |number: 0}}</p>
+							</div>
+							
+						</div>
+				</div>
+				
+			</ion-content>
+		</ion-slide>
+	</ion-slide-box>
+	
+</ion-view>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1" />
+		<title></title>
+		<link type="text/css" rel="stylesheet" href="ionic/css/ionic.min.css" />
+		<link type="text/css" rel="stylesheet" href="css/style.css"/>
+		<script src="ionic/js/ionic.bundle.min.js"></script>
+		<script src="javascript/app.js"></script>
+		<script src="javascript/home/homeController.js"></script>
+		<script src="javascript/top/topController.js"></script>
+		<script src="javascript/category/categoryController.js"></script>
+		<script src="javascript/me/meController.js"></script>
+		<script src="javascript/home/homeServices.js"></script>
+		<script src="javascript/top/topServices.js"></script>
+		<script src="javascript/category/categoryServices.js"></script>
+	</head>
+	<body ng-app="gift"  id="app">
+		<div class="bar-assertive"></div>
+		<ion-nav-bar class="bar-assertive"></ion-nav-bar>
+		
+		<ion-nav-view></ion-nav-view>
+		
+	</body>
+</html>

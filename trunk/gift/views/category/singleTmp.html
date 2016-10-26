@@ -1,0 +1,22 @@
+<div class="single">
+	<!-- 导航部分 -->
+	<ion-scroll delegate-handle="nav" class="left-scroll" scrollbar-y="false">
+		<div class="nav-title" ng-repeat="title in titles" ng-class="{'titleActive':titleIndex==$index}" ng-click="navAction($index)">{{title}}</div>
+	</ion-scroll>
+	
+	<!-- 列表部分 -->
+	<ion-scroll delegate-handle="list" class="right-scroll"  scrollbar-y="false" on-scroll="listScrollAction()">
+		<!-- 多个列表，需要循环 -->
+		<div class="single-list" ng-repeat="listData in lists" ng-style="{{listStyleArr[$index]}}">
+			<!-- 标题分割线 -->
+			<p class="list-title">{{titles[$index]}}</p>
+			<!-- 列表的每个item -->
+			<div class="single-item" ng-repeat="itemData in listData">
+				<img ng-src="{{itemData.icon_url}}"/>
+				<p>{{itemData.name}}</p>
+			</div>
+			
+		</div>
+		
+	</ion-scroll>
+</div>
